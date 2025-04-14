@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+    <title>Tibb Müəssisələrinin İdarəetmə Birliyi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg nav">
+                <a href="" class="logo">
+                    <img src="./src/img/logo.png" alt="logo" class="logo-img">
+                </a>
+                <a href="" class="logo-small">
+                    <img src="./src/img/logo-small.png" alt="logo" class="small-logo-img">
+                </a>
+                <form class="nav-search" role="search">
+                    <input class="input-search" type="search" placeholder="" aria-label="Search">
+                    <button class="form-btn" type="submit">
+                        <img src="./src/img/search.svg" alt="">
+                    </button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tmib
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fəaliyyət
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vətəndaşlar üçün
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hüquqi sənədlər
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Əlaqə
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="right-navbar">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown lang-item">
+                                    <a class="nav-link dropdown-toggle lang-link" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        AZ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="form-search" role="search">
+                            <input class="input-search" type="search" placeholder="" aria-label="Search">
+                            <button class="form-btn" type="submit">
+                                <img src="./src/img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="management-union">
+            <div class="management-union-dots">
+                <img src="./src/img/dots.svg" alt="">
+            </div>
+            <div class="container">
+                <div id="carouselExampleFade" class="carousel slide carousel-fade management-slide"
+                    data-bs-ride="carousel" data-bs-interval="4000">
+                    <div class="carousel-inner management-carousel">
+                        <div class="carousel-item  management-item active">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="management-content">
+                                        <h2 class="management-title">
+                                            Tibbi Ərazi Bölmələrini
+                                            İdarəetmə Birliyi
+                                        </h2>
+                                        <p class="management-text">
+                                            TƏBİB-in fəaliyyətinin əsas məqsədi tabeliyində olan tibb müəssisələrində
+                                            tibbi
+                                            xidmətlərin təşkilini təmin etməkdən və tibbi xidmətlərin keyfiyyətinin
+                                            yüksəldilməsi üçün tədbirlər görməkdən ibarətdir.
+
+                                        </p>
+                                        <a href="" class="more_information">Ətraflı məlumat <i
+                                                class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                                    <div class="management-figure-col">
+                                        <img src="./src/img/figure_top.svg" alt="figure_top" class="figure_top">
+                                        <img src="./src/img/slide1.png" class="d-block management-img"
+                                            alt="management-img">
+                                        <img src="./src/img/figure_bottom.svg" alt="figure_bottom"
+                                            class="figure_bottom">
+
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- <div class="carousel-item  management-item">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="management-content">
+                                        <h2 class="management-title">
+                                            Tibbi Ərazi Bölmələrini
+                                            İdarəetmə Birliyi
+                                        </h2>
+                                        <p class="management-text">
+                                            TƏBİB-in fəaliyyətinin əsas məqsədi tabeliyində olan tibb müəssisələrində
+                                            tibbi
+                                            xidmətlərin təşkilini təmin etməkdən və tibbi xidmətlərin keyfiyyətinin
+                                            yüksəldilməsi üçün tədbirlər görməkdən ibarətdir.
+
+                                        </p>
+                                        <a href="" class="more_information">Ətraflı məlumat <i
+                                                class="fa-solid fa-chevron-right"></i></a>
+                                    </div>
+
+                                </div>
+
+                                <div class="col">
+                                    <div class="management-figure-col">
+                                        <img src="./src/img/figure_top.svg" alt="figure_top" class="figure_top">
+                                        <img src="./src/img/slide2.jpg" class="d-block management-img"
+                                            alt="management-img">
+                                        <img src="./src/img/figure_bottom.svg" alt="figure_bottom"
+                                            class="figure_bottom">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> -->
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services-title">
+                    Bir ömür xidmətinizdə
+                </div>
+                <div class="container ">
+                    <div class="row services-bg">
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="counter-container">
+                                <img src="./src/img/bi_journal-medical.png" alt="service_img" class="service_img">
+                                <div class="counter" data-target="33063800"></div>
+                                <span> Müraciət sayı</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="counter-container">
+                                <img src="./src/img/material-symbols-light_medical-information-outline.png"
+                                    alt="service_img" class="service_img">
+
+                                <div class="counter" data-target="33063800"></div>
+                                <span> Xidmət sayı</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="counter-container">
+                                <img src="./src/img/guidance_medical-laboratory.png" alt="service_img"
+                                    class="service_img">
+                                <div class="counter" data-target="33063800"></div>
+                                <span> Laborator xidmət sayı</span>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                            <div class="counter-container">
+                                <img src="./src/img/carbon_reminder-medical.png" alt="service_img" class="service_img">
+                                <div class="counter" data-target="33063800"></div>
+                                <span>Əməliyyat və prosedur sayı</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="news">
+            <div class="container">
+                <h3 class="news-main-title">Xəbərlər</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="news-col">
+                            <a href="" class="news-abs"></a>
+                            <div class="news-img-blog">
+                                <img src="./src/img/news1.png" alt="news-img" class="news-img">
+
+                            </div>
+                            <div class="news-content">
+                                <h4 class="news-title"> Beynəlxalq Epilepsiya Gününə həsr olunmuş “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilib</h4>
+                                <p class="news-date">
+                                    28.02.2025
+                                </p>
+                                <div class="news-more">
+                                    Ətraflı
+                                    <span class="news-more-icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="news-col">
+                            <a href="" class="news-abs"></a>
+                            <div class="news-img-blog">
+                                <img src="./src/img/news2.png" alt="news-img" class="news-img">
+                            </div>
+                            <div class="news-content">
+                                <h4 class="news-title"> Beynəlxalq Epilepsiya Gününə həsr olunmuş “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilib</h4>
+                                <p class="news-date">
+                                    28.02.2025
+                                </p>
+                                <div class="news-more">
+                                    Ətraflı
+                                    <span class="news-more-icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                        <div class="news-col">
+                            <a href="" class="news-abs"></a>
+                            <div class="news-img-blog">
+                                <img src="./src/img/news4.jpg" alt="news-img" class="news-img">
+                            </div>
+                            <div class="news-content">
+                                <h4 class="news-title"> Beynəlxalq Epilepsiya Gününə həsr olunmuş “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilibBeynəlxalq Epilepsiya Gününə həsr olunmuş
+                                    “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilibBeynəlxalq Epilepsiya Gününə həsr olunmuş
+                                    “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilibBeynəlxalq Epilepsiya Gününə həsr olunmuş
+                                    “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilibBeynəlxalq Epilepsiya Gününə həsr olunmuş
+                                    “Epilepsiyanın
+                                    fərqindəyik!” layihəsi icra edilib</h4>
+                                <p class="news-date">
+                                    28.02.2025
+                                </p>
+                                <div class="news-more">
+                                    Ətraflı
+                                    <span class="news-more-icon">
+                                        <i class="fas fa-arrow-right"></i>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="all-news">
+                    <span>Bütün xəbərlər</span>
+                </a>
+
+            </div>
+        </section>
+
+        <section class="electronic-services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="services-blog">
+                            <a href="" class="services-bg-abs"></a>
+                            <div class="services-img">
+                                <img src="./src/img/services1.png" alt="services-img">
+                            </div>
+                            <h4 class="electronic-services-title">
+                                Elektron xidmətlər
+                            </h4>
+                            <p class="electronic-services-content">
+                                TƏBİB-İin təqdim etdiyi elektron xidmətlər
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="services-blog">
+                            <a href="" class="services-bg-abs"></a>
+                            <div class="services-img">
+                                <img src="./src/img/services2.png" alt="services-img">
+                            </div>
+                            <h4 class="electronic-services-title">
+                                İcbari tibbi sığorta
+                            </h4>
+                            <p class="electronic-services-content">
+                                TƏBİB-İin tabeliyindədəki bütün tibb müəssisələrində icbari tibbi sığortadan yaralana
+                                bilərsiniz
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="services-blog">
+                            <a href="" class="services-bg-abs"></a>
+                            <div class="services-img">
+                                <img src="./src/img/services3.png" alt="services-img">
+                            </div>
+                            <h4 class="electronic-services-title">
+                                Bizimlə çalışın
+                            </h4>
+                            <p class="electronic-services-content">
+                                TƏBİB-də işə qəbul mərhələli şəkildə- test və ya müsahibə formasında keçirilir
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="services-blog">
+                            <a href="" class="services-bg-abs"></a>
+                            <div class="services-img">
+                                <img src="./src/img/services4.png" alt="services-img">
+                            </div>
+                            <h4 class="electronic-services-title">
+                                Tibbi xidmətlər
+                            </h4>
+                            <p class="electronic-services-content">
+                                Vətandaşları maraqlandıran sualların cavaları
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="map">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <div class="territorial_divisions">
+                            <h4 class="territorial_divisions_title">
+                                Tibbi ərazi bölmələri
+                            </h4>
+                            <div class="territorial_divisions_content">
+                                Tibbi Ərazi Bölməsi TƏBİB-in tabeliyindəki dövlət səhiyyə sisteminə daxil olan tibb
+                                müəssisələrinin inzibati ərazi vahidləri üzrə qruplaşdırılmasıdır.
+                            </div>
+                            <a href="" class="more_information">Ətraflı məlumat <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                        <a href="" class="map-img-div">
+                            <img src="./src/img/map.png" alt="map" class="map-img">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faqs">
+
+            <div class="container">
+                <div class="row">
+                    <h3 class="faqs-title">
+                        Ən çox verilən suallar
+                    </h3>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="accordion faq-accordion" id="accordionExample">
+                            <div class="accordion-item faq-accordion-item">
+                                <h2 class="accordion-header faq-accordion-header">
+                                    <button class="accordion-button faq-accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <span class="faq-dot">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </span>
+                                        TƏBİB-in fəaliyyət istiqamətləri hansılardır?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show faq-accordion-collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body faq-accordion-body">
+                                        TƏBİB-in fəaliyyət istiqamətləri aşağıdakılardır:
+
+                                        - tibb müəssisələrinin idarə edilməsini və fəaliyyətinə nəzarəti həyata
+                                        keçirmək;
+                                        - tibb müəssisələrində göstərilən tibb xidmətlərin keyfiyyətinə və əlçatanlığına
+                                        təminat vermək;
+                                        - tibb müəssislərinin fəaliyyətinin vahid əlaqələndirilməsini təmin etmək;
+                                        - tibb müəssisələrində göstərilən tibbi xidmətlərin səviyyəsinin artırılmasını
+                                        və bu xidmətlərin müasir tələblərə uyğunlaşdırılmasını təmin etmək.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item faq-accordion-item">
+                                <h2 class="accordion-header faq-accordion-header">
+                                    <button class="accordion-button collapsed faq-accordion-button" type="button"
+                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <span class="faq-dot">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </span>
+                                        TƏBİB-in fəaliyyətinə nəzarət hansı formada keçirilir?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's accordion body.</strong> It is hidden by
+                                        default, until the
+                                        collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes
+                                        control the overall appearance, as well as the showing and hiding via CSS
+                                        transitions. You can
+                                        modify any of this with custom CSS or overriding our default variables. It's
+                                        also worth noting that
+                                        just about any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="faq-dot">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </span>
+                                        TƏBİB-in tabeli tibb müəssisələri hansılardır?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the
+                                        collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes
+                                        control the overall appearance, as well as the showing and hiding via CSS
+                                        transitions. You can
+                                        modify any of this with custom CSS or overriding our default variables. It's
+                                        also worth noting that
+                                        just about any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <span class="faq-dot">
+                                            <i class="fa-solid fa-circle"></i>
+                                        </span>
+                                        TƏBİB-də işə qəbul necə həyata keçirilir?
+                                    </button>
+                                </h2>
+                                <div id="collapseFour" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the
+                                        collapse plugin adds the appropriate classes that we use to style each element.
+                                        These classes
+                                        control the overall appearance, as well as the showing and hiding via CSS
+                                        transitions. You can
+                                        modify any of this with custom CSS or overriding our default variables. It's
+                                        also worth noting that
+                                        just about any HTML can go within the <code>.accordion-body</code>, though the
+                                        transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                        <div class="faqs-right-blog">
+                            <img src="./src/img/blue-img.png" alt="blue-img" class="blue-img">
+                            <img src="./src/img/faqs-img.png" alt="faqs-img" class="faqs-img">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="offer-demand-blog">
+            <div class="container">
+                <div class="offer-bg">
+                    <img src="./src/img/offer_right.svg" alt="figure" class="offer-left-img">
+                    <img src="./src/img/offer_left.svg" alt="figure" class="offer-right-img">
+
+                    <h4 class="offer-title">
+                        Təklif və ya tələblərinizi dinləməkdən məmnun olarıq
+                    </h4>
+                    <a href="" class="offer-apply">
+                        <span>
+                            Müraciət et
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="framebox">
+            <div class="container">
+                <div class="owl-carousel">
+                    <a class="item item1" href="">
+                        Ulu öndər Heydər Əliyev
+                    </a>
+                    <a class="item item2" href="">
+                        Azərbaycan Respublikasının Prezidenti
+                    </a>
+                    <a class="item item3" href="">
+                        Azərbaycan Respublikasının Birinci vitse-Prezidenti
+                    </a>
+                    <a class="item item4" href="">
+                        Naxçıvan Muxtar Respublikasının Ali Məclisi
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row custom-footer-row">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="logo-container">
+                        <a href="" class="footer-logo-small">
+                            <img src="./src/img/logo-small.png" alt="footer-logo" class="footer-small-logo-img">
+                        </a>
+                    </div>
+                    <a href="" class="footer-logo">
+                        <img src="./src/img/logo.png" class="footer-logo-img" alt="logo-img">
+                    </a>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-navbar">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Haqqımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Struktur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Müşahidə şurası</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="">Rəhbərlik</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-contact">
+                        <ul class="footer-contact-ul">
+                            <li class="footer-contact-list">
+                                <img src="/src/img/phone.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    000
+                                </a>
+                            </li>
+                            <li class="footer-contact-list">
+                                <img src="/src/img/location.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    Naxçıvan
+                                </a>
+                            </li>
+
+                            <li class="footer-contact-list">
+                                <img src="/src/img/mail.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    info@tmib.gov.az
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-social-link">
+                        <ul class="social-link-ul">
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line">
+
+            </div>
+            <div class="copyright">
+                <span class="copyright-span">© 2025 Tərtibat və proqramlaşdırma</span>
+                <a href="" class="copyright-link"> Naxçıvan Muxtar Respublikası Rəqəmsal İnkişaf və Nəqliyyat
+                    Nazirliyi</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    </main>
+
+    <script src="/src/js/bootstrap.bundle.js"></script>
+    <script src="./src/js/counter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

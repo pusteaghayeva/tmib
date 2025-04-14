@@ -1,0 +1,22 @@
+:root {
+    --fontBg: #F9FCFE;
+    --menuColorActive: #1F1534;
+    --menuColor: #8C8999;
+    --inputBg: #007299;
+    --langColor: #033C48;
+    --whiteColor: #ffffff;
+    --managementTitleColor: #000000;
+    --managementTextColor: #7D7987;
+    --moreBtn: #04789D;
+    --serviceBg: #F9FCFE;
+    --countColor: #0069AB;
+    --count: #6D6D6D;
+    --dateColor: rgba(125, 121, 135, 1);
+    --more: #4089ED;
+    --allNews: #458FF6;
+    --servicesBg: #E1EFF8;
+    --faqBorder: #A5B8BF;
+    --faqColor: #6D6D6D;
+    --linkColor: #193F64;
+    --socialLinkBg: #7E7F7F;
+}
