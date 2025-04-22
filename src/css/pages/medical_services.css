@@ -1,0 +1,80 @@
+.medical-services-bg {
+    margin: 70px 0;
+}
+
+.animate,
+.as-accordion-close {
+    transition: transform 0.2s ease-out;
+}
+
+.accordion {
+    border-top: 1px solid #cdcdcd;
+}
+
+.accordion:nth-last-child(1) {
+    border-bottom: 1px solid #cdcdcd;
+}
+
+.as-accordion-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--medicalAccordion);
+    width: 100%;
+    padding: 25px 10px;
+    cursor: pointer;
+}
+
+.as-accordion-head.active {
+    background-color: var(--medicalServicesBg);
+
+}
+
+.as-accordion-title {
+    font-size: 22px;
+    /* line-height: 1.14286; */
+    font-weight: 600;
+    /* letter-spacing: 0; */
+}
+
+.as-accordion-title.active {
+    color: var(--whiteColor);
+}
+
+.as-accordion-close {
+    font-size: 30px;
+    font-weight: 100;
+    transform: translateY(0px) rotate(45deg) scale(0.8);
+    line-height: 0;
+}
+
+.as-accordion-head.active .as-accordion-close {
+    color: var(--whiteColor);
+}
+
+.as-accordion-close.open {
+    transform: translateX(-3px) translateY(-2px) rotate(0deg) scale(1);
+}
+
+.as-accordion-collapse {
+    display: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--medicalAccordion);
+
+}
+
+@media only screen and (max-width: 992px) {
+    .medical-services-bg {
+        margin: 20px 0;
+    }
+
+    .as-accordion-title {
+        font-size: 18px;
+    }
+
+    .as-accordion-collapse {
+        font-size: 16px;
+    }
+}

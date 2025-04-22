@@ -1,0 +1,185 @@
+.management-page {
+    padding: 40px;
+
+}
+
+.management-page-title {
+    font-weight: 800;
+    font-size: 44px;
+    text-align: center;
+    color: var(--count);
+    margin: 26px 0;
+}
+
+.management-page-bg {
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: 1.5px solid rgba(4, 120, 157, .5);
+    background-color: rgba(239, 238, 238, .5);
+    border-radius: 4px;
+}
+
+.management-page-flex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 38px 0 0;
+
+}
+
+.management-page-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+
+}
+
+.management-page-name {
+    font-weight: 900;
+    font-size: 34px;
+    text-align: center;
+    font-family: "Mulish", sans-serif;
+
+
+}
+
+.management-page-director {
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    color: var(--count);
+    margin: 20px 0;
+    font-family: "Mulish", sans-serif;
+
+
+}
+
+.management-page-about {
+    font-weight: 900;
+    font-size: 18px;
+    color: var(--moreBtn);
+    display: block;
+}
+
+.management-page-social {}
+
+.management-page-social-flex {
+    margin: 28px 0;
+}
+
+.management-page-social-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.management-page-social-img {
+    width: 26px;
+    height: 26px;
+    margin-right: 50px;
+}
+
+.management-page-social-link {
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--managementTextColor);
+
+
+}
+
+.management-page-others {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 70px 10px;
+}
+
+.management-other-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.management-other-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+}
+
+.management-other-name {
+    color: var(--managementOtherColor);
+    font-weight: 900;
+    font-size: 24px;
+    /* margin: 10px 0; */
+
+}
+
+.management-other-duty {
+    font-weight: 900;
+    font-size: 18px;
+    text-align: center;
+    color: var(--count);
+}
+
+.management-other-about {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 992px) {
+    .management-page-others {
+        /* width: 90%;
+        margin: 0 auto; */
+        width: 100%;
+        display: block;
+
+    }
+
+    .management-page-bg {
+        box-shadow: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    .management-page-title {
+        margin: 10px 0;
+        font-size: 26px;
+    }
+
+    .management-page {
+        padding: 0px;
+    }
+
+    .management-page-name {
+        font-size: 28px;
+    }
+
+    .management-page-director {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .management-page-social-flex {
+        margin: 10px 0;
+    }
+
+    .management-page-social-link {
+        font-size: 18px;
+    }
+
+    .management-page-others {
+        margin: 30px 0;
+    }
+
+    .management-other-flex {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {}
+

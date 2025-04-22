@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+    <title>Rəhbərlik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg nav">
+                <a href="index.html" class="logo">
+                    <img src="./src/img/logo.png" alt="logo" class="logo-img">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="./src/img/logo-small.png" alt="logo" class="small-logo-img">
+                </a>
+                <form class="nav-search" role="search">
+                    <input class="input-search" type="search" placeholder="" aria-label="Search">
+                    <button class="form-btn" type="submit">
+                        <img src="./src/img/search.svg" alt="">
+                    </button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tmib
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="static.html">Haqqımızda</a></li>
+                                <li><a class="dropdown-item" href="#">Struktur</a></li>
+                                <li><a class="dropdown-item" href="#">Müşahidə şurası</a></li>
+                                <li><a class="dropdown-item" href="management.html">Rəhbərlik</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fəaliyyət
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="activity.html">Tibb müəssisələri</a></li>
+                                <li><a class="dropdown-item" href="medical_services.html">Tibbi xidmətlər</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vətəndaşlar üçün
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Qəbul günləri</a></li>
+                                <li><a class="dropdown-item" href="#">Ən çox verilən suallar</a></li>
+                                <li><a class="dropdown-item" href="electronic_application.html">Elektron müraciət</a></li>
+                                <li><a class="dropdown-item" href="#">İcbari Tibbi Siğorta</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hüquqi sənədlər
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Qanunlar</a></li>
+                                <li><a class="dropdown-item" href="#">Sərəncamlar</a></li>
+                                <li><a class="dropdown-item" href="#">Qərarlar</a></li>
+                                <li><a class="dropdown-item" href="#">Aktlar</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">İctimai əlaqələr</a></li>
+                                <li><a class="dropdown-item" href="#">Xəbərlər</a></li>
+                                <li><a class="dropdown-item" href="#">Foto qalareya</a></li>
+                                <li><a class="dropdown-item" href="#">Video qalareya</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Əlaqə
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="right-navbar">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown lang-item">
+                                    <a class="nav-link dropdown-toggle lang-link" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        AZ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">En</a></li>
+                                        <li><a class="dropdown-item" href="#">Ru</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="form-search" role="search">
+                            <input class="input-search" type="search" placeholder="" aria-label="Search">
+                            <button class="form-btn" type="submit">
+                                <img src="./src/img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="paginacontainer">
+            <div class="progress-wrap">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+
+        </div>
+
+        <section class="activity">
+            <div class="container">
+                <h2 class="management-page-title">Fəaliyyət</h2>
+
+                <p class="activity-title2">Tibb müəssisələri</p>
+                <a href="" class="activity-modal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                    data-bs-whatever="@mdo">Open modal for @mdo</a>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row custom-footer-row">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="logo-container">
+                        <a href="index.html" class="footer-logo-small">
+                            <img src="./src/img/logo-small.png" alt="footer-logo" class="footer-small-logo-img">
+                        </a>
+                    </div>
+                    <a href="index.html" class="footer-logo">
+                        <img src="./src/img/logo.png" class="footer-logo-img" alt="logo-img">
+                    </a>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-navbar">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="static.html">Haqqımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Struktur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Müşahidə şurası</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="management.html">Rəhbərlik</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-contact">
+                        <ul class="footer-contact-ul">
+                            <li class="footer-contact-list">
+                                <img src="./src/img/phone.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    000
+                                </a>
+                            </li>
+                            <li class="footer-contact-list">
+                                <img src="./src/img/location.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    Naxçıvan
+                                </a>
+                            </li>
+
+                            <li class="footer-contact-list">
+                                <img src="./src/img/mail.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    info@tmib.gov.az
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-social-link">
+                        <ul class="social-link-ul">
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line">
+
+            </div>
+            <div class="copyright">
+                <span class="copyright-span">© 2025 Tərtibat və proqramlaşdırma</span>
+                <a href="" class="copyright-link"> Naxçıvan Muxtar Respublikası Rəqəmsal İnkişaf və Nəqliyyat
+                    Nazirliyi</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    </main>
+
+    <script src="./src/js/bootstrap.bundle.js"></script>
+    <script src="./src/js/counter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

@@ -6,3 +6,8 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 @import url('./main.css');
+@import url('./pages/management.css');
+@import url('./pages/static.css');
+@import url('./pages/medical_services.css');
+@import url('./pages/activity.css');
+@import url('./pages/electronic_application.css');
