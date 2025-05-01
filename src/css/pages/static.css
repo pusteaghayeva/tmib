@@ -1,8 +1,7 @@
 .static {
     height: auto;
     font-family: "Noto Sans", sans-serif;
-    color: var(--menuColor);
-
+    margin: 40px 0;
 }
 
 .static_title {
@@ -15,41 +14,26 @@
 .static_content {
     text-align: justify;
     padding: 8px 0;
-    /* font-size: 18px; */
-    color: var(--count);
 }
 
 .static img {
     max-width: 100%;
     display: block;
+    margin: 15px 0;
+    overflow: hidden;
 }
 
-@media (min-width: 320px) and (max-width: 480.98px) {
+@media only screen and (max-width: 992px) {
     .static {
-        margin: 0;
+        margin: 30px auto;
     }
 
     .static_content {
         padding: 8px 0;
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .static_title {
         font-size: 14px;
-    }
-}
-
-@media (min-width: 480.98px) and (max-width: 768px) {
-    .static {
-        margin: 0;
-    }
-
-    .static_content {
-        padding: 8px 0;
-        font-size: 15px;
-    }
-
-    .static_title {
-        font-size: 15px;
     }
 }

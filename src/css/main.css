@@ -655,38 +655,38 @@ a {
     /* overflow-y: auto; */
 }
 
-.accordion-item:first-of-type .faq-dot {
+.faq-accordion .accordion-item:first-of-type .faq-dot {
     display: none;
 }
 
-.accordion-item:first-of-type>.accordion-header .accordion-button {
+.faq-accordion .accordion-item:first-of-type>.accordion-header .accordion-button {
     font-weight: 700;
     font-size: 20px;
 }
 
-.accordion-collapse {
+.faq-accordion .accordion-collapse {
     background-color: var(--moreBtn);
 }
 
-.accordion-item .accordion-header .accordion-button {
+.faq-accordion .accordion-item .accordion-header .accordion-button {
     padding: 23px;
     font-weight: 700;
     font-size: 16px;
 }
 
-.accordion-item .accordion-header .accordion-button.collapsed {
+.faq-accordion .accordion-item .accordion-header .accordion-button.collapsed {
     color: var(--faqColor);
     font-weight: 700;
     font-size: 16px;
     padding: 23px;
 }
 
-.accordion-item .accordion-header:focus {
+.faq-accordion .accordion-item .accordion-header:focus {
     border: 0.94px solid var(--faqBorder);
 
 }
 
-.accordion-button::after {
+.faq-accordion .accordion-button::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23A5B8BF' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
     background-position: center;
     border: 0.94px solid var(--faqBorder);
@@ -697,13 +697,13 @@ a {
 
 
 
-.accordion-button:not(.collapsed)::after {
+.faq-accordion .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23A5B8BF' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
     background-position: center;
     border-radius: 50%;
 }
 
-.accordion-button::after {
+.faq-accordion .accordion-button::after {
     transition: all 0.5s;
 }
 
@@ -717,24 +717,24 @@ a {
     overflow-y: auto;
 }
 
-.accordion-item {
+.faq-accordion-item.accordion-item {
     color: var(--bs-accordion-color);
     background-color: var(--bs-accordion-bg);
     border: none;
     border-bottom: 1px solid #CFCFCF;
 }
 
-.accordion-button {
+.faq-accordion-button.accordion-button {
     transition: border-bottom 0.3s ease;
 }
 
-.accordion-button:focus {
+.faq-accordion-button.accordion-button:focus {
     border: 1px solid var(--faqBorder);
     box-shadow: none;
 }
 
 
-.accordion-button:not(.collapsed) {
+.faq-accordion-button.accordion-button:not(.collapsed) {
     background-color: var(--moreBtn);
     color: var(--whiteColor);
     border: 0.94px solid var(--faqBorder);
@@ -742,7 +742,7 @@ a {
 
 
 
-.accordion-body {
+.faq-accordion-item .accordion-body {
     color: var(--whiteColor);
     font-weight: 700;
     font-size: 12px;
@@ -940,9 +940,7 @@ a {
 
 .owl-carousel .owl-dots.disabled,
 .owl-carousel .owl-nav.disabled {
-    display: block;
-    margin-top: 10px;
-    color: var(--moreBtn);
+    display: none;
 }
 
 body .owl-carousel .owl-dots,
@@ -955,7 +953,7 @@ body .owl-carousel .owl-nav {
 
 body .owl-carousel .owl-dots.disabled,
 body .owl-carousel .owl-nav.disabled {
-    display: block;
+    display: none;
     color: var(--moreBtn);
     margin: 44px 0;
 

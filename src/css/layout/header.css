@@ -16,7 +16,7 @@ header {
 
 ::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px rgba(121, 121, 121, 1);
-    
+
 
 }
 
@@ -129,13 +129,21 @@ header {
 }
 
 .form-btn {
-    position: absolute;
+    /* position: absolute;
     right: 0px;
     background: transparent;
     border: none;
     cursor: pointer;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(0, -50%); */
+
+    position: absolute;
+    right: 10px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    top: 50%;
+    transform: translate(-9px, -50%);
 }
 
 

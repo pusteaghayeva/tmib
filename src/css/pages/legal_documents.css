@@ -1,0 +1,28 @@
+.legal-blog {
+    margin-top: 40px;
+}
+
+
+.legal-documents-blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    border-bottom: 1px solid rgba(132, 131, 131, 0.3);
+    transition: all .4s ease-in-out;
+}
+
+.legal-documents-blog:hover {
+    transform: scale(1.02);
+}
+
+.legal-documents-title {
+    font-weight: 600;
+    font-size: 22px;
+    color: var(--medicalAccordion);
+}
+
+.legal-documents-icon {
+    width: 30px;
+    height: 30px;
+}

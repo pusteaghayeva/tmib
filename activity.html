@@ -13,6 +13,11 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous" />
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
     <link rel="stylesheet" href="./src/css/global.css">
 </head>
@@ -48,9 +53,9 @@
                                 Tmib
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="static.html">Haqqımızda</a></li>
-                                <li><a class="dropdown-item" href="#">Struktur</a></li>
-                                <li><a class="dropdown-item" href="#">Müşahidə şurası</a></li>
+                                <li><a class="dropdown-item" href="about.html">Haqqımızda</a></li>
+                                <li><a class="dropdown-item" href="static.html">Struktur</a></li>
+                                <li><a class="dropdown-item" href="static.html">Müşahidə şurası</a></li>
                                 <li><a class="dropdown-item" href="management.html">Rəhbərlik</a></li>
                             </ul>
                         </li>
@@ -68,22 +73,24 @@
                                 Vətəndaşlar üçün
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Qəbul günləri</a></li>
-                                <li><a class="dropdown-item" href="#">Ən çox verilən suallar</a></li>
-                                <li><a class="dropdown-item" href="electronic_application.html">Elektron müraciət</a></li>
-                                <li><a class="dropdown-item" href="#">İcbari Tibbi Siğorta</a></li>
+                                <li><a class="dropdown-item" href="static.html">Qəbul günləri</a></li>
+                                <li><a class="dropdown-item" href="faqs.html">Ən çox verilən suallar</a></li>
+                                <li><a class="dropdown-item" href="./contact.html">Elektron müraciət</a>
+                                </li>
+                                <li><a class="dropdown-item" href="static.html">İcbari Tibbi Siğorta</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="legal_documents.html" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
                                 Hüquqi sənədlər
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Qanunlar</a></li>
-                                <li><a class="dropdown-item" href="#">Sərəncamlar</a></li>
-                                <li><a class="dropdown-item" href="#">Qərarlar</a></li>
-                                <li><a class="dropdown-item" href="#">Aktlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Qanunlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Sərəncamlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Qərarlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Aktlar</a></li>
                             </ul>
                         </li>
 
@@ -92,18 +99,22 @@
                                 Media
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">İctimai əlaqələr</a></li>
-                                <li><a class="dropdown-item" href="#">Xəbərlər</a></li>
-                                <li><a class="dropdown-item" href="#">Foto qalareya</a></li>
-                                <li><a class="dropdown-item" href="#">Video qalareya</a></li>
+                                <li><a class="dropdown-item" href="public_relations.html">İctimai əlaqələr</a></li>
+                                <li><a class="dropdown-item" href="news.html">Xəbərlər</a></li>
+                                <li><a class="dropdown-item" href="photo_gallery.html">Foto qalareya</a></li>
+                                <li><a class="dropdown-item" href="video_gallery.html">Video qalareya</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Əlaqə
                             </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact_info.html">Bizimlə əlaqə</a></li>
+                            </ul>
                         </li>
+
                     </ul>
                     <div class="right-navbar">
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -146,38 +157,566 @@
         <section class="activity">
             <div class="container">
                 <h2 class="management-page-title">Fəaliyyət</h2>
+                <div class="activity-select-flex">
+                    <div class="custom-select-wrapper">
+                        <span class="custom-select-name">Tibbi ərazi bölməsi</span>
+                        <select class="form-select custom-select">
+                            <option selected>Tibbi mərkəzlər</option>
+                            <option value="1">Stasionar müəssisələr</option>
+                            <option value="2">Şərur, Kəngərli və Sədərək rayonları üzrə</option>
+                            <option value="3">Babək rayonu üzrə</option>
+                            <option value="4">Culfa və Ordubad rayonları üzrə</option>
+                            <option value="5">Şahbuz rayonu üzrə</option>
+                        </select>
+                        <i class="bi bi-chevron-down arrow-icon"></i>
+                    </div>
 
-                <p class="activity-title2">Tibb müəssisələri</p>
-                <a href="" class="activity-modal" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                    data-bs-whatever="@mdo">Open modal for @mdo</a>
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body">
-                                <form>
-                                    <div class="mb-3">
-                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                                        <input type="text" class="form-control" id="recipient-name">
+                    <div class="custom-select-wrapper">
+                        <span class="custom-select-name">Şəhər/rayon</span>
+                        <select class="form-select custom-select">
+                            <option selected>Naxçıvan</option>
+                            <option value="1">Ordubad</option>
+                            <option value="2">Culfa</option>
+                            <option value="3">Şərur</option>
+                            <option value="4">Şahbuz</option>
+                            <option value="5">Sədərək</option>
+                            <option value="6">Kəngərli</option>
+                            <option value="7">Babək</option>
+                        </select>
+                        <i class="bi bi-chevron-down arrow-icon"></i>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="contact-sidebar">
+                            <a href="" class="activity-modal" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                “Naxçıvan Muxtar Respublikası Perinatal Mərkəzi” publik hüquqi şəxsi
+                            </a>
+
+                            <div class="modal fade activity-modal-fade" id="exampleModal1" tabindex="-1"
+                                aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel1"> “Naxçıvan Muxtar
+                                                Respublikası
+                                                Perinatal Mərkəzi” publik hüquqi şəxsi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="activity-modal-body-title ">
+                                                “Bakı Baş Səhiyyə Mərkəzi” PHŞ TƏBİB-in İdarə Heyəti sədrinin
+                                                15.09.2021-ci
+                                                il tarixli qərarı ilə Bakı Baş Səhiyyə İdarəsinin bazası əsasında
+                                                yaradılıb.
+                                                Bakı şəhəri üzrə 106 tibb müəssisəsini əhatə edən Mərkəzin əsas
+                                                fəaliyyət
+                                                istiqaməti ilkin səhiyyə xidmətinin gücləndirilməsi və inkişaf etdiril
+                                            </div>
+                                            <a href="" class="activity-more">Daha çox <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="" class="activity-more activity-less">Daha az <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+
+                                            <div class="activity-modal-title2">
+                                                <span>
+                                                    Tabeliliyində olan tibb müəssisələri:
+                                                </span>
+                                                <ul class="activity-title-ul">
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                            <div class="contact-information activity-contact-information">
+                                                <div class="contact-info-ul">
+                                                    <img src="/src/img/phone.svg" alt="">
+                                                    <a href="tel" class="contact-info-a">
+                                                        (012) 377 00 77
+                                                    </a>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul"> <img src="/src/img/mail.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul">
+                                                        <img src="/src/img/location.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
                                     </div>
-                                    <div class="mb-3">
-                                        <label for="message-text" class="col-form-label">Message:</label>
-                                        <textarea class="form-control" id="message-text"></textarea>
-                                    </div>
-                                </form>
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Send message</button>
+                        </div>
+
+                        <div class="contact-sidebar">
+                            <a href="" class="activity-modal" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                “Naxçıvan Muxtar Respublikası Yoluxucu Xəstəliklər Mərkəzi” publik
+                                hüquqi şəxsi
+                            </a>
+
+                            <div class="modal fade activity-modal-fade" id="exampleModal3" tabindex="-1"
+                                aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel3">“Naxçıvan Muxtar
+                                                Respublikası Yoluxucu Xəstəliklər Mərkəzi” publik
+                                                hüquqi şəxsi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="activity-modal-body-title ">
+                                                “Naxçıvan Muxtar Respublikası Yoluxucu Xəstəliklər Mərkəzi” publik
+                                                hüquqi şəxsi
+                                            </div>
+                                            <a href="" class="activity-more">Daha çox <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="" class="activity-more activity-less">Daha az <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+
+                                            <div class="activity-modal-title2">
+                                                <span>
+                                                    Tabeliliyində olan tibb müəssisələri:
+                                                </span>
+                                                <ul class="activity-title-ul">
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                            <div class="contact-information activity-contact-information">
+                                                <div class="contact-info-ul">
+                                                    <img src="/src/img/phone.svg" alt="">
+                                                    <a href="tel" class="contact-info-a">
+                                                        (012) 377 00 77
+                                                    </a>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul"> <img src="/src/img/mail.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul">
+                                                        <img src="/src/img/location.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-sidebar">
+                            <a href="" class="activity-modal" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                “Naxçıvan Hemodializ Mərkəzi” publik hüquqi şəxsi
+                            </a>
+
+                            <div class="modal fade activity-modal-fade" id="exampleModal3" tabindex="-1"
+                                aria-labelledby="exampleModalLabel3" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel3">“Naxçıvan Hemodializ
+                                                Mərkəzi” publik hüquqi şəxsi</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="activity-modal-body-title ">
+                                                “Naxçıvan Hemodializ Mərkəzi” publik hüquqi şəxsi
+                                            </div>
+                                            <a href="" class="activity-more">Daha çox <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+                                            <a href="" class="activity-more activity-less">Daha az <i
+                                                    class="fa-solid fa-arrow-right"></i></a>
+
+                                            <div class="activity-modal-title2">
+                                                <span>
+                                                    Tabeliliyində olan tibb müəssisələri:
+                                                </span>
+                                                <ul class="activity-title-ul">
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+
+                                                    <li class="activity-title-li">
+                                                        3 saylı Doğum evi
+                                                    </li>
+                                                </ul>
+
+
+                                            </div>
+                                            <div class="contact-information activity-contact-information">
+                                                <div class="contact-info-ul">
+                                                    <img src="/src/img/phone.svg" alt="">
+                                                    <a href="tel" class="contact-info-a">
+                                                        (012) 377 00 77
+                                                    </a>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul"> <img src="/src/img/mail.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="contact-information">
+                                                    <div class="contact-info-ul">
+                                                        <img src="/src/img/location.svg" alt="">
+                                                        <a href="tel" class="contact-info-a">
+                                                            Heydər Əliyev pr. 185B, AZ1029
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-md-6">
+                        <div class="gov-services-inside__form contact-map">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="services__tab__content tab-pane fade active show" id="tab-1" role="tabpanel"
+                                    aria-labelledby="tab-1">
+                                    <div class="select-map">
+                                        <svg style="margin-top: 0;" class="map-nakh" version="1.1" id="Layer_1"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                            viewBox="0 0 820 820" xml:space="preserve">
+                                            <!-- Aktiv classi buradadir. -->
+                                            <path title="ŞƏRUR RPŞ" data-id="67" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip active"
+                                                d="M59.2165 589.458L56.0535 599.546L53.4035 610.659L48.6163 618.438L42.2049 623.14L36.9903 619.549L35.6225 617.327L34.5112 616.985L32.2031 616.899L28.4417 614.164L27.9288 612.881L29.1256 610.573L26.0481 607.838L24.2529 604.076L19.8932 585.868L18.1834 581.765L15.106 579.542L16.1318 578.174L12.7124 578.089L9.6349 577.405L9.0365 577.148L13.0543 569.711L19.0383 563.813L24.7658 562.103L27.9288 558.256V557.145L28.7837 556.632L34.1692 552.443L39.6403 550.562L44.5985 553.127L55.2842 566.89L56.8229 570.053L57.4213 573.558L57.2503 578.003L55.7971 584.842L56.3955 587.578L59.2165 589.458Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="KƏNGƏRLİ RPŞ" data-id="79" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M73.577 584.241L72.3802 585.438L69.0463 590.653L67.1656 596.295L65.7124 602.193L64.6011 607.237L65.5414 612.281L67.6785 617.239L68.7899 622.453L67.8495 624.334L67.0801 626.557L69.0463 631.002L68.4479 635.191L65.5414 637.157L61.78 638.952L57.9332 640.149L54.6847 639.123L51.4363 637.841L48.7008 631.771L47.5894 629.976L46.2217 629.207L44.7684 627.411L43.5716 625.531L43.0587 624.163L42.2039 623.137L48.6153 618.435L53.4025 610.656L56.0525 599.543L59.2155 589.456L64.6011 588.174L68.7044 584.241L72.6367 582.959L73.577 584.241Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="ŞAHBUZ RPŞ" data-id="71" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M146.155 628.438L141.709 633.738L138.632 637.585L134.956 636.901L131.708 633.396L127.519 635.704L121.107 638.183L114.867 641.774L112.388 642.201L111.02 639.636L111.362 635.875L108.284 631.943L101.531 628.523L95.0342 625.36L93.4955 621.257L92.2132 617.325L89.0503 616.042L86.8276 614.333L90.3325 608.947L95.0342 605.015L96.573 602.963L98.1117 603.903L99.7359 604.16L101.446 603.818L104.609 602.365L116.32 594.842L120.252 593.218L138.888 588.687L142.308 588.602L146.326 590.14L149.659 592.534L150.942 594.928V598.176L150.514 602.963L151.797 611.597L151.198 614.589L146.24 622.71L145.3 626.472L146.155 628.438Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="SƏDƏRƏK RPŞ" data-id="65" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M9.03576 577.146L6.98411 575.864L4.93246 572.957L3.30823 565.777L1.85498 563.383L5.95829 561.588L12.7971 560.391L19.1231 560.477L24.0812 559.28L27.9281 557.143V558.254L24.7651 562.101L19.0376 563.81L13.0536 569.709L9.03576 577.146Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="ORDUBAD RPŞ" data-id="66" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M146.753 707.426L149.489 702.639L145.129 698.194L139.914 694.433L139.572 692.552L140.256 690.757L140.769 687.337L141.624 684.26L147.779 676.481L152.908 665.282L154.276 661.692L155.216 658.016L155.9 654.767L156.84 651.775L159.918 648.527L162.824 645.107L166.244 640.662L174.536 644.765L177.528 647.586L178.468 649.125L178.81 650.493L178.468 651.861L174.023 657.759L173.083 662.546L174.45 667.505L177.528 672.634L181.289 678.019L184.281 684.003L191.804 705.289L200.352 721.531L198.899 721.702L190.436 719.565L180.776 715.205L150.087 708.709L146.753 707.426Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="CULFA RPŞ" data-id="69" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M166.243 640.664L162.824 645.109L159.918 648.529L156.84 651.777L155.9 654.769L155.216 658.017L154.275 661.693L152.908 665.284L147.779 676.482L141.624 684.261L140.769 687.339L140.256 690.758L139.572 692.554L139.914 694.434L145.129 698.196L149.488 702.641L146.753 707.428L139.23 704.436L126.236 704.351L117.944 702.299L113.926 702.128L112.815 701.871L112.217 694.862L114.183 692.383L115.038 689.818L111.191 684.176L108.455 677.936L111.191 672.123L111.618 665.369L107.515 662.377L102.899 660.667L109.139 656.735L112.131 649.896L116.491 647.075L114.867 641.775L121.107 638.185L127.519 635.706L131.707 633.398L134.956 636.902L138.632 637.586L141.709 633.74L146.154 628.439L146.582 629.294L154.874 631.431L157.866 633.91L160.601 636.902L164.106 639.638L166.243 640.664Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="BABƏK RPŞ" data-id="68" data-pid="0" data-toggle="tooltip"
+                                                data-placement="top" class="blue-tooltip"
+                                                d="M96.5726 602.965L95.0339 605.017L90.3322 608.949L86.8273 614.335L89.0499 616.045L92.2129 617.327L93.4951 621.259L95.0339 625.363L101.531 628.526L108.284 631.945L111.362 635.877L111.02 639.639L112.387 642.203L114.867 641.776L116.491 647.076L112.131 649.897L103.07 650.068L93.8371 650.752L85.8015 650.324L80.1594 654.684L90.2467 662.121L102.899 660.668L107.515 662.378L111.618 665.37L111.191 672.123L108.455 677.936L111.191 684.177L115.037 689.819L114.183 692.383L112.216 694.862L112.815 701.872L112.131 701.787L109.139 699.992L105.121 698.88L101.787 697.256L98.7098 695.204L97.0001 693.238L96.7436 691.186L97.7694 688.024L98.1114 686.057L97.342 684.861L93.9226 683.236L92.5548 682.211L91.7854 680.672L90.6741 676.568L90.0757 675.115L88.6225 673.662L86.0579 671.867L85.0321 669.986L86.3144 667.165L85.4595 665.199L83.5788 664.002L81.5272 663.575L80.0739 662.891L80.1594 661.267L80.5014 659.471L80.0739 658.275L78.7062 658.104L77.4239 658.702L75.9706 659.728L60.8397 654.684L56.9928 655.881L56.0525 652.975L54.5138 643.657L53.4879 641.605L52.2911 639.81L51.4363 637.844L54.6847 639.126L57.9332 640.152L61.78 638.955L65.5414 637.16L68.4479 635.193L69.0463 631.005L67.0801 626.559L67.8495 624.337L68.7898 622.456L67.6785 617.242L65.5414 612.283L64.601 607.24L65.7124 602.196L67.1656 596.298L69.0463 590.656L72.3802 585.441L73.577 584.244L77.1674 589.373L78.8771 593.306L80.3304 595.443L82.4675 596.298L89.3918 596.896L91.9564 598.264L96.5726 602.965Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                            <path title="NAXÇIVAN MR DİN" data-id="70" data-pid="0"
+                                                data-toggle="tooltip" data-placement="top" class="blue-tooltip"
+                                                d="M102.899 660.668L90.2471 662.121L80.1598 654.684L85.8018 650.324L93.8375 650.751L103.07 650.067L112.131 649.896L109.139 656.735L102.899 660.668Z"
+                                                fill="white" stroke="#1EBFE3" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+
+
+                                        </svg>
+
+                                        <div class="city-modal" id="city_67">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>ŞƏRUR RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Şərur ş. 28 may küçəsi, 5., AZ6800</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 542-21-11</p>
+                                                        <p>Növbətçi hissə: (36) 542-30-57</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_79">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>KƏNGƏRLİ RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Qıvraq qəsəbəs, AZ7403</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 548-01-02</p>
+                                                        <p>Növbətçi hissə: (36) 548-01-10</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_71">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>ŞAHBUZ RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Şahbuz ş. H.Əliyev prospekti 71, AZ7100</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 543-02-00</p>
+                                                        <p>Növbətçi hissə: (36) 543-02-02</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_65">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>SƏDƏRƏK RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Sədərək r. Heydərabad qəsəbəsi, AZ7300</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 549-22-22</p>
+                                                        <p>Növbətçi hissə: (36) 549-22-10</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_66">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>ORDUBAD RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Ordubad ş, H.Əliyev prospekti 57, AZ6900</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 547-04-34</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_69">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>CULFA RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Culfa ş. H.Əliyev prospekti, AZ7200</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 546-02-00</p>
+                                                        <p>Növbətçi hissə: (36) 546-06-40</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_68">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>BABƏK RPŞ</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Babək ş. H.Əliyev prospekti, AZ6700</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 541-37-07</p>
+                                                        <p>Növbətçi hissə: (36) 541-32-36</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="city-modal" id="city_70">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2>NAXÇIVAN MR DİN</h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text">Naxçıvan ş. Nizami Gəncəvi, 32., AZ7000</p>
+                                            <div class="point-info">
+                                                <div class="point-info-item">
+                                                    <span class="map-phone-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>Rəis: (36) 545-72-90</p>
+                                                        <p>Növbətçi hissə: (36) 545-54-46</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <span class="map-fax-icon"></span>
+                                                    <div class="point-info-item-desc">
+                                                        <p>(36) 545-28-96</p>
+                                                    </div>
+                                                </div>
+                                                <div class="point-info-item">
+                                                    <div class="point-info-item-desc">
+                                                        <p>
+                                                            <a href="static.html" class="transition-a">Keçid</a>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                        <div class="city-modal" id="city_72">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2></h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text"></p>
+                                            <div class="point-info"></div>
+                                        </div>
+                                        <div class="city-modal" id="city_74">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2></h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text"></p>
+                                            <div class="point-info"></div>
+                                        </div>
+                                        <div class="city-modal" id="city_76">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2></h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text"></p>
+                                            <div class="point-info"></div>
+                                        </div>
+                                        <div class="city-modal" id="city_77">
+                                            <span onClick="closeCityModal()" class="map-close-icon"></span>
+                                            <h2></h2>
+                                            <h2 class="modal-second-line"></h2>
+                                            <p class="city-modal-text"></p>
+                                            <div class="point-info"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
+            </div>
+
 
 
             </div>
@@ -204,13 +743,13 @@
                     <div class="footer-navbar">
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="static.html">Haqqımızda</a>
+                                <a class="nav-link active" aria-current="page" href="about.html">Haqqımızda</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Struktur</a>
+                                <a class="nav-link" href="static.html">Struktur</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Müşahidə şurası</a>
+                                <a class="nav-link" href="static.html">Müşahidə şurası</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link " href="management.html">Rəhbərlik</a>
@@ -296,6 +835,7 @@
     <script src="./src/js/counter.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="./src/js/map.js"></script>
     <script src="./src/js/main.js"></script>
 </body>
 

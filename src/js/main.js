@@ -98,3 +98,27 @@ jQuery(document).ready(($) => {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const moreBtn = document.querySelector('.activity-more');
+    const lessBtn = document.querySelector('.activity-less');
+    const modalBodyText = document.querySelector('.activity-modal-body-title');
+
+    // Əvvəlcə "Daha az" gizlədilir
+    lessBtn.style.display = 'none';
+
+    moreBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalBodyText.style.height = 'auto';
+        moreBtn.style.display = 'none';
+        lessBtn.style.display = 'inline-flex';
+    });
+
+    lessBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+        modalBodyText.style.height = '50px';
+        lessBtn.style.display = 'none';
+        moreBtn.style.display = 'inline-flex';
+    });
+});

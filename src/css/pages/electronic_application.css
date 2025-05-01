@@ -1,0 +1,80 @@
+.online-apply {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.online-apply .form-container {
+    width: 100%;
+    max-width: 60%;
+    background: #fff;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.online-apply label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #333;
+}
+
+.online-apply input[type="text"],
+.online-apply input[type="email"],
+.online-apply textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    /* border-radius: 5px; */
+    font-size: 14px;
+}
+
+.online-apply input[type="text"]:focus,
+.online-apply input[type="email"]:focus,
+.online-apply textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.online-apply textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+
+
+.online-apply button {
+    width: 60%;
+    background-color: var(--medicalServicesBg);
+    color: var(--whiteColor);
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.online-apply button:hover {
+    background-color: rgb(3, 102, 134);
+}
+
+@media only screen and (max-width: 992px) {
+    .online-apply {
+        margin: 20px 0;
+    }
+
+    .online-apply .form-container {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        border: none;
+    }
+
+}

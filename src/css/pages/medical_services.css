@@ -1,5 +1,5 @@
 .medical-services-bg {
-    margin: 70px 0;
+    margin-top: 70px;
 }
 
 .animate,
@@ -7,11 +7,11 @@
     transition: transform 0.2s ease-out;
 }
 
-.accordion {
+.medical-services-bg .accordion {
     border-top: 1px solid #cdcdcd;
 }
 
-.accordion:nth-last-child(1) {
+.medical-services-bg .accordion:nth-last-child(1) {
     border-bottom: 1px solid #cdcdcd;
 }
 
@@ -32,9 +32,7 @@
 
 .as-accordion-title {
     font-size: 22px;
-    /* line-height: 1.14286; */
     font-weight: 600;
-    /* letter-spacing: 0; */
 }
 
 .as-accordion-title.active {

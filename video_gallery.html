@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./src/img/logo.png" type="image/x-icon">
+    <title>Rəhbərlik</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/global.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg nav">
+                <a href="index.html" class="logo">
+                    <img src="./src/img/logo.png" alt="logo" class="logo-img">
+                </a>
+                <a href="index.html" class="logo-small">
+                    <img src="./src/img/logo-small.png" alt="logo" class="small-logo-img">
+                </a>
+                <form class="nav-search" role="search">
+                    <input class="input-search" type="search" placeholder="" aria-label="Search">
+                    <button class="form-btn" type="submit">
+                        <img src="./src/img/search.svg" alt="">
+                    </button>
+                </form>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Tmib
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="about.html">Haqqımızda</a></li>
+                                <li><a class="dropdown-item" href="static.html">Struktur</a></li>
+                                <li><a class="dropdown-item" href="static.html">Müşahidə şurası</a></li>
+                                <li><a class="dropdown-item" href="management.html">Rəhbərlik</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Fəaliyyət
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="activity.html">Tibb müəssisələri</a></li>
+                                <li><a class="dropdown-item" href="medical_services.html">Tibbi xidmətlər</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Vətəndaşlar üçün
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="static.html">Qəbul günləri</a></li>
+                                <li><a class="dropdown-item" href="faqs.html">Ən çox verilən suallar</a></li>
+                                <li><a class="dropdown-item" href="./contact.html">Elektron müraciət</a>
+                                </li>
+                                <li><a class="dropdown-item" href="static.html">İcbari Tibbi Siğorta</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Hüquqi sənədlər
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="legal_documents.html">Qanunlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Sərəncamlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Qərarlar</a></li>
+                                <li><a class="dropdown-item" href="legal_documents.html">Aktlar</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Media
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="public_relations.html">İctimai əlaqələr</a></li>
+                                <li><a class="dropdown-item" href="news.html">Xəbərlər</a></li>
+                                <li><a class="dropdown-item" href="photo_gallery.html">Foto qalareya</a></li>
+                                <li><a class="dropdown-item" href="video_gallery.html">Video qalareya</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Əlaqə
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="contact_info.html">Bizimlə əlaqə</a></li>
+                            </ul>
+                        </li>
+
+
+                    </ul>
+                    <div class="right-navbar">
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown lang-item">
+                                    <a class="nav-link dropdown-toggle lang-link" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        AZ
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">En</a></li>
+                                        <li><a class="dropdown-item" href="#">Ru</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <form class="form-search" role="search">
+                            <input class="input-search" type="search" placeholder="" aria-label="Search">
+                            <button class="form-btn" type="submit">
+                                <img src="./src/img/search.svg" alt="">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="paginacontainer">
+            <div class="progress-wrap">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+                </svg>
+            </div>
+
+        </div>
+
+        <section class="news-blog video-gallery">
+            <div class="container">
+                <h2 class="management-page-title gallery-page-title">Videoqalereya</h2>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq1.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    2025-ci ilin 3 ayı ərzində müharibə iştirakçılarına ümumilikdə 63 mindən çox tibbi
+                                    xidmət göstərilib
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq2.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    Şamaxı Rayon Mərkəzi Xəstəxanasında minimal invaziv üsulla iki əməliyyat eyni vaxtda
+                                    icra olunub
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq3.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    Bu kəndlərdə 260-a yaxın sakinə 350-dək tibbi xidmət göstərilib
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq1.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    2025-ci ilin 3 ayı ərzində müharibə iştirakçılarına ümumilikdə 63 mindən çox tibbi
+                                    xidmət göstərilib
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal3"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq2.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    Şamaxı Rayon Mərkəzi Xəstəxanasında minimal invaziv üsulla iki əməliyyat eyni vaxtda
+                                    icra olunub
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+                        <div class="video-gallery-blog-col">
+                            <a href="#" class="video-blog-abs" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal4"></a>
+
+                            <div class="video-blog-col-img" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                <img src="./src/img/video-icon.svg" alt="video-icon" class="video-icon">
+                                <img src="./src/img/news_bloq3.png" alt="gallery" class="video-blog-img">
+                            </div>
+                            <div class="video-bottom">
+                                <div class="video-title">
+                                    Bu kəndlərdə 260-a yaxın sakinə 350-dək tibbi xidmət göstərilib
+                                </div>
+                                <p class="video-date">19.04.2025</p>
+                            </div>
+
+
+                        </div>
+                        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Bağla"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe width="560" height="315"
+                                                src="https://www.youtube.com/embed/3DcoC8p9az8?si=xBWR0ls1fN3S4A9b"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                referrerpolicy="strict-origin-when-cross-origin"
+                                                allowfullscreen></iframe>
+
+                                            <video id="localVideo" class="d-none" controls>
+                                                <source id="localVideoSource" src="" type="video/mp4">
+                                                Sizin brauzeriniz bu videonu dəstəkləmir.
+                                            </video>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Bağla</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row custom-footer-row">
+                <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3">
+                    <div class="logo-container">
+                        <a href="index.html" class="footer-logo-small">
+                            <img src="./src/img/logo-small.png" alt="footer-logo" class="footer-small-logo-img">
+                        </a>
+                    </div>
+                    <a href="index.html" class="footer-logo">
+                        <img src="./src/img/logo.png" class="footer-logo-img" alt="logo-img">
+                    </a>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-navbar">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="about.html">Haqqımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static.html">Struktur</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="static.html">Müşahidə şurası</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="management.html">Rəhbərlik</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-contact">
+                        <ul class="footer-contact-ul">
+                            <li class="footer-contact-list">
+                                <img src="./src/img/phone.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    000
+                                </a>
+                            </li>
+                            <li class="footer-contact-list">
+                                <img src="./src/img/location.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    Naxçıvan
+                                </a>
+                            </li>
+
+                            <li class="footer-contact-list">
+                                <img src="./src/img/mail.svg" alt="" class="footer-icon">
+                                <a href="" class="footer-link">
+                                    info@tmib.gov.az
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-3 col-xl-3">
+                    <div class="footer-social-link">
+                        <ul class="social-link-ul">
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                            </li>
+                            <li class="social-link-li">
+                                <a href="">
+                                    <i class="fa-brands fa-twitter"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-line">
+
+            </div>
+            <div class="copyright">
+                <span class="copyright-span">© 2025 Tərtibat və proqramlaşdırma</span>
+                <a href="" class="copyright-link"> Naxçıvan Muxtar Respublikası Rəqəmsal İnkişaf və Nəqliyyat
+                    Nazirliyi</a>
+
+            </div>
+        </div>
+    </footer>
+
+
+    </main>
+
+    <script src="./src/js/bootstrap.bundle.js"></script>
+    <script src="./src/js/counter.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script src="./src/js/main.js"></script>
+</body>
+
+</html>

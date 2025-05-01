@@ -1,6 +1,7 @@
 footer {
     width: 100%;
     color: var(--whiteColor);
+    margin-top: 120px;
 }
 
 dl,
