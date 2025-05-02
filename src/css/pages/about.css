@@ -2,8 +2,6 @@
     padding: 30px 0;
 }
 
-.about-left {}
-
 .about-right {
     display: flex;
     justify-content: center;
@@ -17,10 +15,6 @@
     opacity: 0.9;
 }
 
-/* .vision {
-    background-color: yellow;
-} */
-
 .vision-bg {
     display: flex;
     align-items: flex-start;
@@ -31,7 +25,6 @@
     padding: 48px;
     font-weight: 600;
     font-size: 32px;
-    /* line-height: 36px; */
     margin: 0 0 48px;
     color: var(--whiteColor);
 }
@@ -61,10 +54,6 @@
     margin: 40px 0;
 }
 
-.our-values {
-    /* background-color: yellow; */
-}
-
 .values-title {
     font-weight: 800;
     font-size: 40px;
@@ -73,7 +62,6 @@
 
 .values-col {
     position: relative;
-    /* background-color: red; */
     border: 1px solid var(--inputBg);
     width: 250px;
     height: 110px;
@@ -111,7 +99,6 @@
     overflow: hidden;
 }
 
-/* Border animasiyası üçün 4 tərəf */
 .values-col::before,
 .values-col::after,
 .values-col span::before,
@@ -123,7 +110,6 @@
 
 }
 
-/* Üst tərəf */
 .values-col::before {
     height: 2px;
     width: 0%;
@@ -131,15 +117,12 @@
     left: 0;
 }
 
-/* Sağ tərəf */
 .values-col::after {
     width: 2px;
     height: 0%;
     top: 0;
     right: 0;
 }
-
-/* Alt tərəf */
 .values-col span::before {
     height: 2px;
     width: 0%;
@@ -147,7 +130,6 @@
     right: 0;
 }
 
-/* Sol tərəf */
 .values-col span::after {
     width: 2px;
     height: 0%;
@@ -155,7 +137,6 @@
     left: 0;
 }
 
-/* Hover zamanı animasiya */
 .values-col:hover::before {
     width: 100%;
 }
@@ -176,23 +157,18 @@
 
 @media only screen and (max-width: 992px) {
     .values-col {
-        /* position: relative; */
-        /* background-color: red; */
-        /* border: 1px solid var(--inputBg); */
         width: 45%;
         height: 110px;
         display: flex;
         align-items: center;
         justify-content: center;
         margin: 4px auto;
-        /* cursor: pointer; */
     }
 }
 
 @media only screen and (max-width: 576px) {
     .values-col {
         width: 100%;
-        /* background-color: red; */
     }
     .about-right img{
         width: 50%;
